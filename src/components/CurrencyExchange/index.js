@@ -20,8 +20,6 @@ const ExchangeForm = () => {
   const [errors, setErrors] = useState({});
 
   const onChange = (event, action) => {
-    console.log(event);
-    console.log(action);
     event && action
       ? setValues(values => ({
           ...values,
@@ -46,7 +44,7 @@ const ExchangeForm = () => {
         if (conversion)
           setValues(values => ({ ...values, conversion: conversion.data }));
       } catch (error) {
-        // FIXME: improve error handling by making exceptions handled more explicit
+        // FIXME: make error handling more explicit
         setErrors(errors => ({
           ...errors,
           ["apiError"]: "Something went wrong!",
@@ -233,7 +231,6 @@ const cryptocurrencyOptions = [
   ...cryptoCurrency,
   label: `${cryptoCurrency.name} ${`(${cryptoCurrency.symbol})`}`,
   value: cryptoCurrency.symbol,
-  otherName: "baseCurrency",
 }));
 
 const groupedOptions = [
