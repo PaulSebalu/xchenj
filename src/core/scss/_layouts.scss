@@ -1,0 +1,8 @@
+@import "./variables";
+
+body {
+  font-family: $base_font_family_;
+  overflow-x: hidden;
+  font-size: $base_font_size_;
+  line-height: $base_line_height_;
+}

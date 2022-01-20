@@ -1,0 +1,18 @@
+@import "./variables";
+
+.numeric-value {
+  font-family: $numeric_font_family_;
+}
+
+.form-control {
+  border: 1px solid $black_;
+  border-radius: 5px;
+  &:hover {
+    border-color: $gray_;
+  }
+
+  &:focus {
+    border: 2px solid $lime_green_;
+    box-shadow: none;
+  }
+}

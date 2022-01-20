@@ -1,0 +1,75 @@
+{
+    "name": "xchenj",
+    "version": "1.0.0",
+    "description": "A client app for currency conversion",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack serve --config webpack.config.dev.js --port 3000",
+        "test": "test",
+        "build": "webpack --config webpack.config.prod.js",
+        "clean:build": "rimraf ./build && mkdir build",
+        "serve:build": "http-server ./build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PaulSebalu/xchenj.git"
+    },
+    "keywords": [
+        "react"
+    ],
+    "author": "PaulSebalu",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/PaulSebalu/xchenj/issues"
+    },
+    "homepage": "https://github.com/PaulSebalu/xchenj#readme",
+    "dependencies": {
+        "axios": "^0.24.0",
+        "bootstrap": "^5.1.0",
+        "classnames": "^2.3.1",
+        "dotenv": "^10.0.0",
+        "dotenv-webpack": "^7.0.3",
+        "http-server": "^13.0.0",
+        "humanize-plus": "^1.8.2",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.2",
+        "react-bootstrap": "^2.0.2",
+        "react-day-picker": "^7.4.10",
+        "react-dom": "^17.0.2",
+        "react-number-format": "^4.7.3",
+        "react-router-dom": "^5.2.0",
+        "react-select": "^4.3.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@svgr/webpack": "^5.5.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.2.2",
+        "babel-preset-react-app": "^10.0.0",
+        "css-loader": "^6.2.0",
+        "cssnano": "^5.0.7",
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.6",
+        "eslint": "^7.32.0",
+        "eslint-loader": "^4.0.2",
+        "eslint-plugin-import": "^2.24.0",
+        "eslint-plugin-react": "^7.24.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "html-webpack-plugin": "^5.3.2",
+        "http-server": "^13.0.0",
+        "jest": "^27.0.6",
+        "mini-css-extract-plugin": "^2.2.0",
+        "npm-run-all": "^4.1.5",
+        "postcss-loader": "^6.1.1",
+        "react-test-renderer": "^17.0.2",
+        "react-testing-library": "^8.0.1",
+        "sass": "^1.37.5",
+        "sass-loader": "^12.1.0",
+        "style-loader": "^3.2.1",
+        "svg-url-loader": "^7.1.1",
+        "webpack": "^5.49.0",
+        "webpack-bundle-analyzer": "^4.4.2",
+        "webpack-cli": "^4.7.2",
+        "webpack-dev-server": "^3.11.2"
+    }
+}
