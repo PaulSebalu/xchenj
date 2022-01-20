@@ -4,4 +4,15 @@
   &__form {
     background-color: $very_light_gray_;
   }
+
+  @media only screen and (max-width: 768px) {
+    &--img {
+      transform: rotate(90deg);
+    }
+
+    // FIXME: This is a quick fix
+    &--margin-y {
+      margin: 10px 0;
+    }
+  }
 }

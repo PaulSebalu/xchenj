@@ -105,11 +105,20 @@ const ExchangeForm = () => {
                     />
                   </Form.Group>
                 </Col>
-                <Col sm={12} md={1}>
-                  <img src={switchBase} width="40" loading="lazy" />
+                <Col
+                  sm={12}
+                  md={1}
+                  className="text-center exchange-canvas__img"
+                >
+                  <img
+                    className="exchange-canvas--img"
+                    src={switchBase}
+                    width="40"
+                    loading="lazy"
+                  />
                 </Col>
                 <Col sm={12} md={5}>
-                  <Form.Group>
+                  <Form.Group className="exchange-canvas--margin-y">
                     <Select
                       name="exchangeCurrency"
                       value={values.exchangeCurrency}
