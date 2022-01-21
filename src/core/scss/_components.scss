@@ -1,0 +1,26 @@
+@import "./variables";
+
+.btn-primary {
+  //   color: $white_;
+  background-color: $lime_green_;
+  border-color: $lime_green_;
+  border-radius: 5px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $lime_green_tint_;
+    border-color: $lime_green_tint_;
+  }
+
+  &:focus {
+    // color: $white_;
+    background-color: $lime_green_shade_;
+    border-color: $lime_green_shade_;
+    box-shadow: none !important; // >>> https://stackoverflow.com/a/23337989
+  }
+
+  &:active {
+    background-color: $lime_green_shade_;
+    border-color: $lime_green_shade_;
+  }
+}
