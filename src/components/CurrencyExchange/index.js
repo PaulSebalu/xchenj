@@ -300,7 +300,7 @@ const ExchangeForm = () => {
                         )} ${values.baseCurrency.label}`}</Col>
                         <Col sm={12} md={2} className="text-center">
                           <img
-                            className=""
+                            className="exchange-canvas--img"
                             src={equalsSign}
                             width="20"
                             loading="lazy"
