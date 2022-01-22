@@ -257,7 +257,7 @@ const ExchangeForm = () => {
                         className="btn-sm mt-md-2"
                         variant="primary"
                       >
-                        <SwitchIcon />
+                        <SwitchIcon className="exchange-canvas--img" />
                       </Button>
                     </Col>
                     <Col sm={12} md={5}>
