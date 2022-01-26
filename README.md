@@ -11,6 +11,5 @@
 - Link to ```API_DOMAIN``` [repo](https://github.com/PaulSebalu/xchenj-api)
 - Start the development server using `yarn start`
 
-<!-- Since the frontend is mostly acting as a presentational layer 
+Since the frontend is mostly acting as a presentational layer 
 with the app backbone in the backend, writing tests commenced there
- -->
