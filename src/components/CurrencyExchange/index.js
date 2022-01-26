@@ -307,9 +307,12 @@ const ExchangeForm = () => {
                           />
                         </Col>
                         <Col sm={12} md={5}>
-                          <span className="fw-bold">{`${Humanize.intComma(
-                            values.conversion.toFixed(2)
-                          )}`}</span>{" "}
+                          {" "}
+                          <span className="fw-bold">
+                            {values.conversion > 1
+                              ? `${Humanize.formatNumber(values.conversion, 2)}`
+                              : `${values.conversion.toPrecision(4)}`}
+                          </span>{" "}
                           {`${values.exchangeCurrency.label}`}
                         </Col>
                       </>
