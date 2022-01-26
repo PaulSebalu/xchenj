@@ -1,5 +1,16 @@
-# Currency Converter
+<div align="center">
+ <h2>Currency converter</h2>
+</div>
 
-.env variables
+<p>A react js frontend</p>
 
-- API_DOMAIN=IFINDEVELOPMENT(localhost...)
+#### Installation guidelines
+- Clone the repository
+- Install dependencies using `yarn install` from the app root
+- Create an  ```.env``` file and specify the ```API_DOMAIN```
+- Link to ```API_DOMAIN``` [repo](https://github.com/PaulSebalu/xchenj-api)
+- Start the development server using `yarn start`
+
+<!-- Since the frontend is mostly acting as a presentational layer 
+with the app backbone in the backend, writing tests commenced there
+ -->
